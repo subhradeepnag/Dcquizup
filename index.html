@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DCquizup</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/style.js" charset="utf-8"></script>
+
+  </head>
+  <body>
+
+    <div class="intro container">
+      <h1><strong>WELCOME</strong></h1>
+      <br>
+      <p>Take this Quiz to determine the domains you qualify for</p>
+      <p>This quiz contains a total of 14 questions, all questions from different domains.</p>
+      <p>You get 10 seconds to answer each question.</p>
+      <button type="button" name="startQuiz" class="btn btn-lg" id="startQuizBtn">Enter Quiz</button>
+    </div>
+
+    <div class="preQuiz">
+      <p></p>
+    </div>
+
+    <div class="progressBar"></div>
+
+    <div class="container question-box">
+      <h1></h1>
+      <h2></h2>
+      <img src="" alt="">
+    </div>
+    <div class="container options">
+      <div class="row">
+        <div class="col-md-4 offset-md-2" id="option">
+          <button type="button" class="btn btn-block" id="option1">option1</button>
+        </div>
+        <div class="col-md-4" id="option">
+          <button type="button" class="btn btn-block" id="option2">option2</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 offset-md-2" id="option">
+          <button type="button" class="btn btn-block" id="option3">option3</button>
+        </div>
+        <div class="col-md-4" id="option">
+          <button type="button" class="btn btn-block" id="option4">option4</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="result container">
+      <h1>RESULT</h1>
+      <p>You got <span id="score"></span>/14 answers correct!</p>
+      <p>You qualify for the following domains:</p>
+      <ul id="qualifiedDomains">
+      </ul>
+    </div>
+  </body>
+</html>
