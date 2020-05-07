@@ -31,6 +31,20 @@ $(document).ready(function() {
     ["Wheel and axle","Pulley","Lever", "Wedge"],
     ["Dorothy","Sophia","Eva", "Irona"],
   ]
+  var addressstuff=["https://www.aaruushdomains.com/magefficie",
+"https://www.aaruushdomains.com/architecture",
+"https://www.aaruushdomains.com/digital-design",
+"https://www.aaruushdomains.com/electrizite",
+"https://www.aaruushdomains.com/bluebook",
+"https://www.aaruushdomains.com/konstruktion",
+"https://www.aaruushdomains.com/fundaz",
+"https://www.aaruushdomains.com/x-zone",
+"https://www.aaruushdomains.com/vimanaz",
+"https://www.aaruushdomains.com/praesentatio",
+"https://www.aaruushdomains.com/yuddhame",
+"https://www.aaruushdomains.com/online",
+"https://www.aaruushdomains.com/machination",
+"https://www.aaruushdomains.com/robogyan"]
   var answers = [3,2,4,4,2,3,3,3,1,3,3,3,2,4];
   var userAnswers = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var ans = 0;
@@ -166,7 +180,7 @@ function showResult() {
   for (var i = 0; i < answers.length; i++) {
     if (answers[i] == userAnswers[i]) {
       correct++;
-      $("#qualifiedDomains").append("<li>" + domains[i] + "</li>");
+      $("#qualifiedDomains").append("<li><a href='" + addressstuff[i] +"'target='_blank'>" + domains[i] + "</a></li>");
     }
   }
   $('#score').text(correct);
