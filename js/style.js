@@ -1,51 +1,43 @@
 $(document).ready(function() {
 
-  var domains = ["MAGEFFICIE", "ARCHITECTURE", "DIGITAL DESIGN", "ELECTRIZITE", "BLUEBOOK ", "KONSTRUKTION", "FUNDAZ", "X ZONE & ACTIVITIES ", "VIMANAZ", "PRAESENTATIO", "YUDDHAME", "ONLINE ", "MACHINATION", "ROBOGYAN"]
-  var questionText = ["Which of the following company has signed an agreement with Bank of Baroda to be the preferred financier for its dealers and consumers?",
-  "Which of these cities has the maximum number of historical monuments?",
-  "Who started the Pixar animation studio?",
-  "In the circuit shown below, the voltage and current sources are ideal. The voltage (Vout) across the current source, in volts, is",
-  "Which is the sheet-like muscle at the bottom of a human chest?",
-  "What is the recommended size of a brick according to Bureau of Indian Standards?",
-  "Find out which of the figures (1), (2), (3) and (4) can be formed from the pieces given in the figure (X).",
-  "What is this software used for?",
-  "Which company’s headquarter lies in Chicago, IL?",
-  "From the above given lines from “The Road not taken” by Robert frost, What is the author trying to convey?",
-  "From the following options, choose the output for the code",
-  "_______ programs are automatically loaded and operates as a part of browser.",
-  "What type of machine does old fashioned water well use?",
-  "What was the name of the maid robot in Richie Rich?"]
-  var choices = [
-    ["Ashok Leyland","Tata Motors","Hyundai Motor India", "Mahindra & Mahindra"],
-    ["Kolkata","Delhi","Mumbai", "Chennai"],
-    ["Warren Buffett", "Tim Cook", "Walt Disney", "Steve Jobs"],
-    ["0","5","10", "20"],
-    ["Internal intercostal","Diaphragm","External intercostal", "Sternum"],
-    ["20x10x10cm","20x9x9cm","19x9x9cm", "19x8x8cm"],
-    ["1","2","3", "4"],
-    ["Photo Editing","Video editing","Game development", "Music production"],
-    ["Boeing","Honeywell","Sukhoi", "Antonov"],
-    ["It represents a world which is full of people, where people have been living for many years.","He decided that that day he would take one path and keep the other path for another day.","He says that, he had to choose a road and that made all the difference", "He says just as fair, so, he felt that both paths were equally good and started walking on one of them."],
-    ["Done","Compile error","Runtime error", "None of the above"],
-    ["Widgets","Utilities","Plug-ins", "Add-ons"],
-    ["Wheel and axle","Pulley","Lever", "Wedge"],
-    ["Dorothy","Sophia","Eva", "Irona"],
-  ]
-  var addressstuff=["https://www.aaruushdomains.com/magefficie",
-"https://www.aaruushdomains.com/architecture",
-"https://www.aaruushdomains.com/digital-design",
-"https://www.aaruushdomains.com/electrizite",
-"https://www.aaruushdomains.com/bluebook",
-"https://www.aaruushdomains.com/konstruktion",
-"https://www.aaruushdomains.com/fundaz",
-"https://www.aaruushdomains.com/x-zone",
-"https://www.aaruushdomains.com/vimanaz",
-"https://www.aaruushdomains.com/praesentatio",
-"https://www.aaruushdomains.com/yuddhame",
-"https://www.aaruushdomains.com/online",
-"https://www.aaruushdomains.com/machination",
-"https://www.aaruushdomains.com/robogyan"]
-  var answers = [3,2,4,4,2,3,3,3,1,3,3,3,2,4];
+  var domains = ["Q1", "Q2", "Q3", "Q4", "Q5 ", "Q6", "Q7", "Q8 ", "Q9", "Q10", "Q11", "Q12 ", "Q13", "Q14","Q15","Q16","Q17","Q18","Q19"]
+  var questionText = ["A vertical longitudinal space between wythes of masonry or between an outer masonry wythe and another backup system.",
+  "A rod or spindle (either fixed or rotating) passing through the centre of a wheel or group of wheels.",
+  "Which of these is called a split pin?",
+  "The component  is a three-piece fastener system and has a U-shaped piece that has holes at the end of the prongs to accept the  pin.",
+  "Which of the following is a hardware device that mechanically joins or affixes two or more objects together.",
+  "Which simple machine principle applies on a pair of scissors?",
+  " What is the device used for connecting ends of shafts for power transmission?",
+  " Which of the following is a mechanical device that inhibits motion by absorbing energy from a moving system?",
+  "Which of the following gear type is used for translating rotation motion in linear motion?",
+  " What mechanical device is used to engage and disengage power transmission especially from driving shaft to driven shaft?",
+  "A mechanical fastener composed of a head on one end and a cylindrical stem on another (called the tail) which has the appearance of a metal pin.",
+  "A device that harnesses the kinetic energy of some fluid - such as water, steam, air, or combustion gases - and turns this into the rotational motion of the device itself. ",
+  " What does the below gauge indicate in a car?",
+  "Which one of the following is not a part of simple machine ",
+"A machine element that constrains realative motion to only desired motion  and reduces the friction between two object?",
+"Which of folowing tupes of brakes are the most effective one?",
+"Which type of following brake system is most effective in car system",
+".At what part of the car hydraulic liquid is not used?",
+"What is the use of choke in a bike?"];
+
+var choices=[["Studs","Collar Joint","Rivets","Standoffs"],["Axle","Rod","Clutch","Sprocket"],["B","C","D","A"],["ClutchTwin","Bracket","Clevis fastener","Retaining ring"],["Screw","Nails","Fastener","Power Screw"],["Wedge","Lever","Pulley","Slope"],["Splines","Linkages","Seals","Couplings"],["Fasteners","Clutch","Brake","Cam"],["Spur gear","Herringbone gear","Rack and Pinion gear","Bevel gear"],["Axle","Batten","Clutch","Flange"],["Screw","Rivet","Spur","Spline"],["Gasket","Turbine","Camshaft","Distributor"],["Temp.of oil","Temp.of coolant","Temp.of car","None of the above"],["wedge","lever","pulley","All of the above"],["Brakes","Accelerator","Bearing","Suspension"],["Caliper brake","V.brake","Cantilever brakes","Disc brake"],["Drum brakes","Disc brakes","CBS","ABS"],["Brakes","Steering","Engine","Clutch"],["Increasing the air quantity","Increasing fuel quantity","Balancing the air fuel mixture","None of the above"]];
+ 
+//   var addressstuff=["https://www.aaruushdomains.com/magefficie",
+// "https://www.aaruushdomains.com/architecture",
+// "https://www.aaruushdomains.com/digital-design",
+// "https://www.aaruushdomains.com/electrizite",
+// "https://www.aaruushdomains.com/bluebook",
+// "https://www.aaruushdomains.com/konstruktion",
+// "https://www.aaruushdomains.com/fundaz",
+// "https://www.aaruushdomains.com/x-zone",
+// "https://www.aaruushdomains.com/vimanaz",
+// "https://www.aaruushdomains.com/praesentatio",
+// "https://www.aaruushdomains.com/yuddhame",
+// "https://www.aaruushdomains.com/online",
+// "https://www.aaruushdomains.com/machination",
+// "https://www.aaruushdomains.com/robogyan"]
+  var answers = [2,1,1,3,3,2,4,3,3,3,2,2,2,4,3,4,4,3,2];
   var userAnswers = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var ans = 0;
   var correct = 0;
@@ -79,8 +71,8 @@ $(document).ready(function() {
   function questionBoxIn(id) {
     $(".question-box h1").text(domains[id]);
     $(".question-box h2").text(questionText[id]);
-    console.log("../res/q images/"+id+'.jpg');
-    $(".question-box img").attr("src", "./res/q images/"+id+".jpg");
+    console.log("../res/q images/"+id+'.png');
+    $(".question-box img").attr("src", "./res/q images/"+id+".png");
     $(".question-box").fadeIn(500);
   }
 
@@ -180,7 +172,7 @@ function showResult() {
   for (var i = 0; i < answers.length; i++) {
     if (answers[i] == userAnswers[i]) {
       correct++;
-      $("#qualifiedDomains").append("<li><a href='" + addressstuff[i] +"'target='_blank'>" + domains[i] + "</a></li>");
+      $("#qualifiedDomains").append( domains[i] + "</a></li>");
     }
   }
   $('#score').text(correct);
